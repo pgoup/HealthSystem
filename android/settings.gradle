@@ -1,2 +1,0 @@
-include ':app', ':healthsystem2'
-rootProject.name='HealthSystem'
