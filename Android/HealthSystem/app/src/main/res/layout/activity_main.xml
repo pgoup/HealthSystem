@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.common.MainActivity">
+    
+    <LinearLayout
+        android:id="@+id/menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/home_page_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_background"
+            android:drawableTop="@drawable/menu_channel_home_page"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="首页"
+            android:textColor="@drawable/menu_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/classify_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_background"
+            android:drawableTop="@drawable/menu_channel_classify"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="分类"
+            android:textColor="@drawable/menu_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hot_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_background"
+            android:drawableTop="@drawable/menu_channel_hot"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="热门"
+            android:textColor="@drawable/menu_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/nutrition_query_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_background"
+            android:drawableTop="@drawable/menu_channel_nutrition_query"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="食材"
+            android:textColor="@drawable/menu_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/mime_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_background"
+            android:drawableTop="@drawable/menu_channel_mime"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="我的"
+            android:textColor="@drawable/menu_text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@+id/menu_bar" />
+
+    <FrameLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/div_menu_bar" />
+    <!-- android:layout_below="@+id/top_text_bar"-->
+
+
+</RelativeLayout>
