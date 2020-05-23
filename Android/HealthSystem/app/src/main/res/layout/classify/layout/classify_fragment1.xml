@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/classify_fragment_search_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mime_rounded_edit_text"
+        android:gravity="left" />
+
+
+    <LinearLayout
+        android:id="@+id/classify_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:id="@+id/classify_first_menu_scroll_view"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:fadingEdge="none"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/classify_first_menu"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
